@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutuhareket</title>
+    <style>
+        .box{
+            width: 310px;
+            height: 310px;
+            background-color: red;
+            transition: .5s;
+            animation: box-animation 3s infinite;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+        @-webkit-keyframes box-animation{
+           0%{           
+            left:0%;
+            top: 0%;
+            transform: translate(0%,0%);
+            
+                                 
+           }
+           25%{
+            top: 0%;
+            left: 100%;
+            transform: translate(-100%,0%);
+            
+            
+           }
+           50%{
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%,-100%);
+            
+           }
+           75%{
+            top: 100%;
+            left: 0%;
+            transform: translate(0%,-100%);
+           }
+           100%{            
+            top: 0%;
+            left: 0%;
+            transform: translate(0%,0%);           
+           }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"</div>
+</body>
+</html>
